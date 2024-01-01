@@ -80,10 +80,10 @@ header .header-wrapper h1 span {
   font-size: 7px;
   position: absolute;
   top: 0;
-  right: -4px;
+  right: -3px;
 }
 header > h1 {
-  width: 100%;
+  width: fit-content;
   position: absolute;
   top: 370px;
   left: 50%;
@@ -93,7 +93,7 @@ header > h1 span {
   font-size: 70px;
   position: absolute;
   top: 0;
-  right: 120px;
+  right: -30px;
 }
 header .header-bottom {
   width: 95%;

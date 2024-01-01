@@ -98,9 +98,9 @@
 
 /* 그 외 프로젝트 */
 .other-project-container {
-  padding-top: 400px;
+  padding: 400px 0 250px;
   position: relative;
-  height: 2000px;
+  height: 1800px;
 }
 .other-project-container .project-line {
   width: 1px;
@@ -180,13 +180,15 @@
 }
 .other-project-container .other-box3 {
   width: 429px;
-  height: 461px;
   position: absolute;
   bottom: 0;
   left: 10%;
 }
 .other-project-container .other-box3 p {
   padding-top: 30px;
+}
+.other-project-container .other-box3 a img {
+  width: 100%;
 }
 
 /* stack */
