@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* font-family: 'Prompt', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* font-family: 'Outfit', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
+
+/* font-family: 'Pretendard Variable'; */
+@import url(./pretendardvariable.css);
+
+/* font-family: 'GmarketSans';
+ */
+@import url("https://webfontworld.github.io/gmarket/GmarketSans.css");

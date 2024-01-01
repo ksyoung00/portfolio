@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sinyoung-portfolio</title>
+    <!-- viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- og -->
+    <meta property="og:title" content="portfolio" />
+    <meta property="og:description" content="portfolio" />
+    <meta
+      property="og:image"
+      content="https://ksy00728.github.io/og/images/code.png"
+    />
+    <meta property="og:url" content="https://ksy00728.github.io/og/og.html" />
+
+    <!-- reset -->
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <link rel="stylesheet" href="./assets/styles/pretendardvariable.css" />
+
+    <!-- common -->
+    <link rel="stylesheet" href="./assets/styles/common.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./portfolio.css" />
+
+    <!-- js -->
+    <script defer src="./js/portfolio.js"></script>
+    <script defer src="./js/header.js"></script>
+  </head>
+
+  <body>
+    <header id="home">
+      <ul class="header-wrapper">
+        <li>
+          <a href="#" id="open-btn" class="menu-btn-1">
+            <div class="menu-bar">
+              <span></span>
+              <span></span>
+            </div>
+            <div>menu</div>
+          </a>
+
+          <div class="global-menu">
+            <nav>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#team">Team Project</a></li>
+              <li><a href="#other">Other Project</a></li>
+              <li><a href="#stack">Stack</a></li>
+              <li><a href="#contact">Contact me</a></li>
+            </nav>
+            <a href="#" id="close-btn" class="menu-btn">close</a>
+          </div>
+        </li>
+
+        <li>
+          <h1>Publisher<span>®</span></h1>
+        </li>
+      </ul>
+
+      <h1>Publisher<span>®</span></h1>
+
+      <div class="header-bottom">
+        <span>©2024</span>
+        <span>Web Design Portfolio</span>
+      </div>
+      <div class="header-line"></div>
+      <div class="header-bottom-line"></div>
+    </header>
+
+    <main>
+      <article class="main-container">
+        <img src="./assets/images/main.png" alt="메인" />
+        <div class="main-text-box">
+          <div>Hi —</div>
+          <div>this is</div>
+          <div>my portfolio.</div>
+          <div>I hope you like it.</div>
+          <div>Enjoy and</div>
+          <a href="#contact" class="grid">contact me</a>
+          <div>if you have</div>
+          <div>any question.</div>
+        </div>
+      </article>
+
+      <section id="team" class="team-project-container">
+        <article class="project-box">
+          <a href="./portfolio_sub.html"
+            ><img src="./assets/images/team_project.png" alt="팀프로젝트1"
+          /></a>
+          <div class="project-title">
+            <div>Team</div>
+            <div>project</div>
+          </div>
+
+          <ul>
+            <li>Publisher</li>
+            <li>React Team Project</li>
+            <li>Contact</li>
+          </ul>
+        </article>
+
+        <article class="project-text-box">
+          <ul>
+            <li>Project Name</li>
+            <li>NuTTi</li>
+            <li>Tag</li>
+            <li>#React #Frontend/Backend #UI디자인</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="other" class="other-project-container">
+        <span class="project-line"></span>
+        <h2>
+          <div>Other</div>
+          <div>projects</div>
+        </h2>
+        <ul>
+          <li class="other-box1">
+            <a href="./portfolio_sub.html">
+              <img src="./assets/images/project_1.png" alt="팀프로젝트2" />
+            </a>
+            <div class="box-text">
+              <h3>mangrove</h3>
+              <p>
+                Team Project
+                <span># HTML</span>
+                <span># CSS</span>
+                <span># JavaScript</span>
+                <span># 반응형 웹 </span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="other-box2">
+              <a href="./portfolio_sub.html"
+                ><img src="./assets/images/project_2.png" alt="개인프로젝트1"
+              /></a>
+              <div>
+                <h3>Project name</h3>
+                <p>
+                  Project Description<br />
+                  Comprehensive construction<br />services
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="other-box3">
+            <a href="./portfolio_sub.html"
+              ><img src="./assets/images/project_3.png" alt="개인프로젝트2"
+            /></a>
+            <!-- <h3>mangrove</h3> -->
+            <p>
+              We perform the functions of<br />
+              a general contractor
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="stack" class="stack-container">
+        <article>
+          <h2>Stack</h2>
+          <p>
+            <span>We will help you implement a project of</span
+            ><span>any complexity</span>
+          </p>
+        </article>
+
+        <ul class="stack-list">
+          <li>
+            <div>
+              <h3>HTML5 & CSS3</h3>
+              <strong
+                >Hyper Text Markup Language & Cascading Style Sheets</strong
+              >
+            </div>
+            <div class="stack-line"></div>
+            <ul class="stack-text-box">
+              <li>* 웹 사이트 구축 및 디자인</li>
+              <li>* 미디어 쿼리를 이용한 반응형 웹 제작</li>
+              <li>* flex, grid, position을 사용한 웹디자인 / 레이아웃 제작</li>
+              <li>* 애니메이션animation 효과 적용</li>
+            </ul>
+          </li>
+          <li>
+            <div>
+              <h3>JavaScript(ES6+) & jQuery</h3>
+            </div>
+            <div class="stack-line"></div>
+            <ul class="stack-text-box">
+              <li>* ES6+ 문법 사용 및 기본 문법 이해</li>
+              <li>* scroll, mouse 이벤트 제어</li>
+              <li>* open API 사용</li>
+              <li>* jQuery 내용 추가</li>
+            </ul>
+          </li>
+          <li>
+            <div>
+              <h3>React</h3>
+              <strong>Frontend & Backdend <span>Node.js</span></strong>
+            </div>
+            <div class="stack-line"></div>
+            <ul class="stack-text-box">
+              <li>* 다양한 Frontend 라이브러리 사용</li>
+              <li>* MongoDB를 사용한 Backend 작업</li>
+              <li>* 여러가지 Hook 사용</li>
+              <li>* Node.js 사용</li>
+            </ul>
+          </li>
+          <li>
+            <div>
+              <h3>deploy</h3>
+              <strong>GitHub Pages & cloudtype</strong>
+            </div>
+            <div class="stack-line"></div>
+            <ul class="stack-text-box">
+              <li>* GitHub Pages / cloudtype를 이용한 배포</li>
+            </ul>
+          </li>
+          <li>
+            <div>
+              <h3>Tool</h3>
+              <strong
+                >Photoshop & Illustrator & Figma
+                <span>Git / GitHub</span></strong
+              >
+            </div>
+            <div class="stack-line"></div>
+            <ul class="stack-text-box">
+              <li>* 이미지 편집 / 디자인</li>
+              <li>* 프로토타입 제작</li>
+              <li>* Git Bash 사용</li>
+              <li>* 작업물 공유 및 협업</li>
+              <li>* GitHub organization을 이용한 프로젝트 진행</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="contact-wrapper">
+        <h3>contact me</h3>
+        <ul class="contact-list">
+          <li>
+            <div class="contact-name-box">
+              <span>Name*</span>
+              <p>김신영</p>
+            </div>
+            <div class="contact-mail-box">
+              <span>E-mail*</span>
+              <p>k_7700@naver.com</p>
+            </div>
+          </li>
+          <li>
+            <span>Link*</span>
+            <div class="contact-link-list">
+              <a href="#">insta</a>
+              <a href="#">kakao</a>
+              <a href="#">mail</a>
+              <a href="#">GitHub</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-line"></div>
+        <h1>Publisher<span>®</span></h1>
+        <ul class="footer-end">
+          <li>©2024</li>
+          <li>Made by <em>sinYoung</em></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
