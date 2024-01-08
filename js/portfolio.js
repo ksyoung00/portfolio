@@ -10,27 +10,34 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // main에 글자 색 채워짐
-// 스크롤 이벤트 감지
 document.addEventListener("scroll", function () {
-  // 현재 스크롤 위치 가져오기
-  const scrollPosition = window.scrollY;
+  const mainTextElements = document.querySelectorAll(".main-text-box");
 
-  // 시작 색상 및 종료 색상 설정
-  const startColor = [175, 185, 170]; // #AFB9AA
-  const endColor = [42, 97, 18]; // #2A6112
+  mainTextElements.forEach(function (mainTextBox) {
+    const bounding = mainTextBox.getBoundingClientRect();
 
-  // 현재 스크롤 위치에 따라 중간 색상 계산
-  const currentColor = startColor.map((start, i) =>
-    Math.round(start + (endColor[i] - start) * (scrollPosition / 1000))
-  );
+    if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+      mainTextBox.classList.add("active");
+    } else {
+      mainTextBox.classList.remove("active");
+    }
+  });
+});
 
-  // RGB 값을 Hex로 변환
-  const textColor = `#${currentColor
-    .map((color) => color.toString(16).padStart(2, "0"))
-    .join("")}`;
+document.addEventListener("scroll", function () {
+  const body = document.body;
+  const scrolled = window.scrollY > 0;
+  body.classList.toggle("scrolled", scrolled);
+});
 
-  // 글자 색상 적용
-  document.querySelectorAll(".main-text-box span").forEach(function (div) {
-    div.style.color = textColor;
+// 스크롤하면 컨텐츠 나타남
+window.addEventListener("scroll", function () {
+  var scrolled = window.scrollY;
+  var mainContainers = document.querySelectorAll("section");
+
+  mainContainers.forEach(function (mainContainer) {
+    if (scrolled > mainContainer.offsetTop - window.innerHeight / 4) {
+      mainContainer.classList.add("active");
+    }
   });
 });

@@ -116,6 +116,7 @@ header .header-bottom {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10000;
   transition: 0.4s;
   transform: translateY(-200px);
 }
@@ -145,4 +146,9 @@ header .header-bottom {
   top: 150px;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+.menu-btn:hover {
+  background-color: var(--point-color);
+  color: var(--main-color);
 }
