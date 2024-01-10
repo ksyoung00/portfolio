@@ -7,6 +7,9 @@ header .header-text h1 {
   font-size: 180px;
   margin-bottom: 35px;
 }
+header .header-text h1:hover {
+  cursor: url("../assets/images/free-icon-cursor-491866.png"), auto;
+}
 header .header-text {
   position: absolute;
   top: 50%;

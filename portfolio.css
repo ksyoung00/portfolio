@@ -148,15 +148,21 @@ body.scrolled .main-container .main-text-box.active .main-text {
   position: relative;
   height: 1800px;
 }
+/* 라인 */
 .other-project-container .project-line {
   width: 1px;
-  height: 950px;
+  height: 0;
   background-color: var(--point-color);
   position: absolute;
   top: 19.5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 6s;
 }
+.other-project-container .project-line.active {
+  height: 950px;
+}
+
 .other-project-container h2 {
   text-align: left;
   font-size: 80px;
@@ -257,13 +263,35 @@ body.scrolled .main-container .main-text-box.active .main-text {
   display: grid;
   grid-template-rows: repeat(5, 500px);
   grid-template-columns: 1fr;
+  position: relative;
 }
+/* 라인 */
+.stack-container .stack-list .stack-top-line,
+.stack-container .stack-list .stack-bottom-line {
+  height: 1px;
+  width: 0;
+  background-color: var(--point-color);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 5s;
+}
+.stack-container .stack-list .stack-top-line {
+  top: 0;
+}
+.stack-container .stack-list .stack-bottom-line {
+  bottom: 0;
+}
+.stack-container .stack-list .stack-top-line.active {
+  width: 95%;
+}
+.stack-container .stack-list .stack-bottom-line.active {
+  width: 95%;
+}
+
 .stack-container .stack-list > li {
-  border-top: 1px solid var(--point-color);
   display: flex;
-}
-.stack-container .stack-list > li:last-child {
-  border-bottom: 1px solid var(--point-color);
+  position: relative;
 }
 .stack-container .stack-list > li div {
   width: 50%;
@@ -285,12 +313,32 @@ body.scrolled .main-container .main-text-box.active .main-text {
 .stack-container .stack-list > li div strong span {
   display: block;
 }
+/* 라인 */
 .stack-container .stack-list > li .stack-line {
   width: 1px;
-  height: 500px;
+  height: 0;
   background-color: var(--point-color);
   padding: 0;
+  transition: 5s;
 }
+.stack-container .stack-list > li .stack-line.active {
+  height: 500px;
+}
+.stack-container .stack-list > li .bottom-line {
+  width: 0;
+  height: 1px;
+  background-color: var(--point-color);
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 5s;
+}
+.stack-container .stack-list > li .bottom-line.active {
+  width: 95%;
+}
+
 .stack-container .stack-list > li .stack-text-box {
   width: 50%;
   text-align: left;

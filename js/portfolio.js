@@ -41,3 +41,43 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+// 스크롤하면 라인 나타남
+window.addEventListener("scroll", function () {
+  var scrolled = window.scrollY;
+
+  var projectLines = document.querySelectorAll(".project-line");
+  var stackLines = document.querySelectorAll(".stack-line");
+  var stackTopLines = document.querySelectorAll(".stack-top-line");
+  var stackBottomLines = document.querySelectorAll(".stack-bottom-line");
+  var bottomLines = document.querySelectorAll(".bottom-line");
+
+  projectLines.forEach(function (projectLine) {
+    if (scrolled > projectLine.offsetTop - window.innerHeight / 1) {
+      projectLine.classList.add("active");
+    }
+  });
+
+  stackLines.forEach(function (stackLine) {
+    if (scrolled > stackLine.offsetTop - window.innerHeight / 1) {
+      stackLine.classList.add("active");
+    }
+  });
+
+  stackTopLines.forEach(function (stackLine) {
+    if (scrolled > stackLine.offsetTop - window.innerHeight / 1) {
+      stackLine.classList.add("active");
+    }
+  });
+  stackBottomLines.forEach(function (stackLine) {
+    if (scrolled > stackLine.offsetTop - window.innerHeight / 1) {
+      stackLine.classList.add("active");
+    }
+  });
+
+  bottomLines.forEach(function (stackLine) {
+    if (scrolled > stackLine.offsetTop - window.innerHeight / 1) {
+      stackLine.classList.add("active");
+    }
+  });
+});

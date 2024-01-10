@@ -5,24 +5,41 @@ header {
   padding: 15px 30px;
   position: relative;
 }
+
+/* 세로라인 */
 header .header-line {
   width: 1px;
-  height: 420px;
+  height: 0;
   background-color: var(--point-color);
   position: absolute;
   top: 82%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 1.5s;
+  opacity: 0;
 }
+header .header-line.active {
+  height: 420px;
+  opacity: 1;
+}
+
+/* 가로라인 */
 header .header-bottom-line {
-  width: 95%;
+  width: 0;
   height: 1px;
   background-color: var(--point-color);
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 1.5s;
+  opacity: 0;
 }
+header .header-bottom-line.active {
+  width: 95%;
+  opacity: 1;
+}
+
 header h1 {
   font-size: 280px;
 }
